@@ -726,7 +726,7 @@ namespace DataManagerGUI
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tvCollectionTree);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(216, 579);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(216, 604);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
@@ -747,7 +747,7 @@ namespace DataManagerGUI
             this.tsbSave});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(216, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(108, 25);
             this.toolStrip1.Stretch = true;
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Visible = false;
@@ -901,7 +901,7 @@ namespace DataManagerGUI
             this.tvCollectionTree.Location = new System.Drawing.Point(0, 0);
             this.tvCollectionTree.Name = "tvCollectionTree";
             this.tvCollectionTree.SelectedImageIndex = 0;
-            this.tvCollectionTree.Size = new System.Drawing.Size(216, 579);
+            this.tvCollectionTree.Size = new System.Drawing.Size(216, 604);
             this.tvCollectionTree.TabIndex = 0;
             this.tvCollectionTree.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.tvCollectionTree_AfterLabelEdit);
             this.tvCollectionTree.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.tvCollectionTree_ItemDrag);

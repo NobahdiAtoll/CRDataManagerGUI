@@ -160,6 +160,7 @@ class MainForm(Form):
 		self._tstbValue = System.Windows.Forms.ToolStripTextBox()
 		self._tsbRunSearch = System.Windows.Forms.ToolStripButton()
 		self._toolStripSeparator5 = System.Windows.Forms.ToolStripSeparator()
+		self._statusStrip1 = System.Windows.Forms.StatusStrip()
 		self._tabControl1.SuspendLayout()
 		self._tabEdit.SuspendLayout()
 		self._splitContainer1.BeginInit()
@@ -204,11 +205,10 @@ class MainForm(Form):
 		self._tabControl1.Controls.Add(self._tabEdit)
 		self._tabControl1.Controls.Add(self._tabTemplateManager)
 		self._tabControl1.Controls.Add(self._tabSearch)
-		self._tabControl1.Dock = System.Windows.Forms.DockStyle.Fill
 		self._tabControl1.Location = System.Drawing.Point(0, 0)
 		self._tabControl1.Name = "tabControl1"
 		self._tabControl1.SelectedIndex = 0
-		self._tabControl1.Size = System.Drawing.Size(922, 661)
+		self._tabControl1.Size = System.Drawing.Size(922, 665)
 		self._tabControl1.TabIndex = 1
 		# 
 		# tabEdit
@@ -217,7 +217,7 @@ class MainForm(Form):
 		self._tabEdit.Location = System.Drawing.Point(4, 22)
 		self._tabEdit.Name = "tabEdit"
 		self._tabEdit.Padding = System.Windows.Forms.Padding(3)
-		self._tabEdit.Size = System.Drawing.Size(914, 635)
+		self._tabEdit.Size = System.Drawing.Size(914, 639)
 		self._tabEdit.TabIndex = 0
 		self._tabEdit.Text = "Edit"
 		self._tabEdit.UseVisualStyleBackColor = True
@@ -239,7 +239,7 @@ class MainForm(Form):
 		self._splitContainer1.Panel2.Controls.Add(self._pnlGroups)
 		self._splitContainer1.Panel2.Controls.Add(self._pnlGeneral)
 		self._splitContainer1.Panel2MinSize = 676
-		self._splitContainer1.Size = System.Drawing.Size(908, 629)
+		self._splitContainer1.Size = System.Drawing.Size(908, 633)
 		self._splitContainer1.SplitterDistance = 216
 		self._splitContainer1.TabIndex = 1
 		# 
@@ -253,13 +253,13 @@ class MainForm(Form):
 		# toolStripContainer1.ContentPanel
 		# 
 		self._toolStripContainer1.ContentPanel.Controls.Add(self._tvCollectionTree)
-		self._toolStripContainer1.ContentPanel.Size = System.Drawing.Size(216, 604)
+		self._toolStripContainer1.ContentPanel.Size = System.Drawing.Size(216, 608)
 		self._toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill
 		self._toolStripContainer1.LeftToolStripPanelVisible = False
 		self._toolStripContainer1.Location = System.Drawing.Point(0, 0)
 		self._toolStripContainer1.Name = "toolStripContainer1"
 		self._toolStripContainer1.RightToolStripPanelVisible = False
-		self._toolStripContainer1.Size = System.Drawing.Size(216, 629)
+		self._toolStripContainer1.Size = System.Drawing.Size(216, 633)
 		self._toolStripContainer1.TabIndex = 2
 		self._toolStripContainer1.Text = "toolStripContainer1"
 		self._toolStripContainer1.TopToolStripPanelVisible = False
@@ -411,7 +411,7 @@ class MainForm(Form):
 		self._tvCollectionTree.HotTracking = True
 		self._tvCollectionTree.Location = System.Drawing.Point(0, 0)
 		self._tvCollectionTree.Name = "tvCollectionTree"
-		self._tvCollectionTree.Size = System.Drawing.Size(216, 604)
+		self._tvCollectionTree.Size = System.Drawing.Size(216, 608)
 		self._tvCollectionTree.TabIndex = 0
 		# 
 		# pnlRulesets
@@ -446,7 +446,7 @@ class MainForm(Form):
 		self._pnlRulesets.Dock = System.Windows.Forms.DockStyle.Fill
 		self._pnlRulesets.Location = System.Drawing.Point(0, 0)
 		self._pnlRulesets.Name = "pnlRulesets"
-		self._pnlRulesets.Size = System.Drawing.Size(688, 629)
+		self._pnlRulesets.Size = System.Drawing.Size(688, 633)
 		self._pnlRulesets.TabIndex = 4
 		# 
 		# comboBox1
@@ -457,7 +457,7 @@ class MainForm(Form):
 		self._comboBox1.Items.AddRange(System.Array[System.Object](
 			["AND",
 			"OR"]))
-		self._comboBox1.Location = System.Drawing.Point(544, 66)
+		self._comboBox1.Location = System.Drawing.Point(526, 64)
 		self._comboBox1.Name = "comboBox1"
 		self._comboBox1.Size = System.Drawing.Size(130, 21)
 		self._comboBox1.TabIndex = 23
@@ -467,7 +467,7 @@ class MainForm(Form):
 		self._btnRulesetRulesMoveDown.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnRulesetRulesMoveDown.Enabled = False
 		self._btnRulesetRulesMoveDown.ImageIndex = 13
-		self._btnRulesetRulesMoveDown.Location = System.Drawing.Point(658, 242)
+		self._btnRulesetRulesMoveDown.Location = System.Drawing.Point(658, 246)
 		self._btnRulesetRulesMoveDown.Name = "btnRulesetRulesMoveDown"
 		self._btnRulesetRulesMoveDown.Size = System.Drawing.Size(25, 25)
 		self._btnRulesetRulesMoveDown.TabIndex = 17
@@ -478,7 +478,7 @@ class MainForm(Form):
 		self._btnRulesetRulesMoveUp.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnRulesetRulesMoveUp.Enabled = False
 		self._btnRulesetRulesMoveUp.ImageIndex = 12
-		self._btnRulesetRulesMoveUp.Location = System.Drawing.Point(658, 216)
+		self._btnRulesetRulesMoveUp.Location = System.Drawing.Point(658, 220)
 		self._btnRulesetRulesMoveUp.Name = "btnRulesetRulesMoveUp"
 		self._btnRulesetRulesMoveUp.Size = System.Drawing.Size(25, 25)
 		self._btnRulesetRulesMoveUp.TabIndex = 16
@@ -489,7 +489,7 @@ class MainForm(Form):
 		self._btnActionMoveDown.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnActionMoveDown.Enabled = False
 		self._btnActionMoveDown.ImageIndex = 13
-		self._btnActionMoveDown.Location = System.Drawing.Point(658, 533)
+		self._btnActionMoveDown.Location = System.Drawing.Point(658, 537)
 		self._btnActionMoveDown.Name = "btnActionMoveDown"
 		self._btnActionMoveDown.Size = System.Drawing.Size(25, 25)
 		self._btnActionMoveDown.TabIndex = 17
@@ -500,7 +500,7 @@ class MainForm(Form):
 		self._btnActionMoveUp.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnActionMoveUp.Enabled = False
 		self._btnActionMoveUp.ImageIndex = 12
-		self._btnActionMoveUp.Location = System.Drawing.Point(658, 507)
+		self._btnActionMoveUp.Location = System.Drawing.Point(658, 511)
 		self._btnActionMoveUp.Name = "btnActionMoveUp"
 		self._btnActionMoveUp.Size = System.Drawing.Size(25, 25)
 		self._btnActionMoveUp.TabIndex = 16
@@ -547,7 +547,7 @@ class MainForm(Form):
 		# 
 		self._btnRulesetRuleRemove.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right
 		self._btnRulesetRuleRemove.ImageIndex = 18
-		self._btnRulesetRuleRemove.Location = System.Drawing.Point(467, 308)
+		self._btnRulesetRuleRemove.Location = System.Drawing.Point(446, 308)
 		self._btnRulesetRuleRemove.Name = "btnRulesetRuleRemove"
 		self._btnRulesetRuleRemove.Size = System.Drawing.Size(104, 23)
 		self._btnRulesetRuleRemove.TabIndex = 12
@@ -559,7 +559,7 @@ class MainForm(Form):
 		# 
 		self._btnRulesetRuleUpdate.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right
 		self._btnRulesetRuleUpdate.ImageIndex = 15
-		self._btnRulesetRuleUpdate.Location = System.Drawing.Point(259, 308)
+		self._btnRulesetRuleUpdate.Location = System.Drawing.Point(238, 308)
 		self._btnRulesetRuleUpdate.Name = "btnRulesetRuleUpdate"
 		self._btnRulesetRuleUpdate.Size = System.Drawing.Size(104, 23)
 		self._btnRulesetRuleUpdate.TabIndex = 11
@@ -571,7 +571,7 @@ class MainForm(Form):
 		# 
 		self._btnRulesetRuleClear.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right
 		self._btnRulesetRuleClear.ImageIndex = 7
-		self._btnRulesetRuleClear.Location = System.Drawing.Point(571, 308)
+		self._btnRulesetRuleClear.Location = System.Drawing.Point(550, 308)
 		self._btnRulesetRuleClear.Name = "btnRulesetRuleClear"
 		self._btnRulesetRuleClear.Size = System.Drawing.Size(104, 23)
 		self._btnRulesetRuleClear.TabIndex = 13
@@ -600,7 +600,7 @@ class MainForm(Form):
 		# 
 		self._btnRulesetRuleAdd.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right
 		self._btnRulesetRuleAdd.ImageIndex = 17
-		self._btnRulesetRuleAdd.Location = System.Drawing.Point(363, 308)
+		self._btnRulesetRuleAdd.Location = System.Drawing.Point(342, 308)
 		self._btnRulesetRuleAdd.Name = "btnRulesetRuleAdd"
 		self._btnRulesetRuleAdd.Size = System.Drawing.Size(104, 23)
 		self._btnRulesetRuleAdd.TabIndex = 10
@@ -678,7 +678,7 @@ class MainForm(Form):
 		self._dgvRulesetActions.RowHeadersVisible = False
 		self._dgvRulesetActions.RowHeadersWidth = 25
 		self._dgvRulesetActions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-		self._dgvRulesetActions.Size = System.Drawing.Size(642, 210)
+		self._dgvRulesetActions.Size = System.Drawing.Size(642, 214)
 		self._dgvRulesetActions.TabIndex = 15
 		# 
 		# dataGridViewTextBoxColumn2
@@ -700,7 +700,7 @@ class MainForm(Form):
 		# 
 		self._btnRulesetActionAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnRulesetActionAdd.ImageIndex = 17
-		self._btnRulesetActionAdd.Location = System.Drawing.Point(342, 599)
+		self._btnRulesetActionAdd.Location = System.Drawing.Point(342, 603)
 		self._btnRulesetActionAdd.Name = "btnRulesetActionAdd"
 		self._btnRulesetActionAdd.Size = System.Drawing.Size(104, 23)
 		self._btnRulesetActionAdd.TabIndex = 20
@@ -713,7 +713,7 @@ class MainForm(Form):
 		self._label5.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right
 		self._label5.AutoSize = True
 		self._label5.Font = System.Drawing.Font("Microsoft Sans Serif", 8.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
-		self._label5.Location = System.Drawing.Point(464, 68)
+		self._label5.Location = System.Drawing.Point(456, 68)
 		self._label5.Name = "label5"
 		self._label5.Size = System.Drawing.Size(68, 13)
 		self._label5.TabIndex = 7
@@ -733,7 +733,7 @@ class MainForm(Form):
 		# 
 		self._btnRulesetActionClear.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnRulesetActionClear.ImageIndex = 7
-		self._btnRulesetActionClear.Location = System.Drawing.Point(550, 599)
+		self._btnRulesetActionClear.Location = System.Drawing.Point(550, 603)
 		self._btnRulesetActionClear.Name = "btnRulesetActionClear"
 		self._btnRulesetActionClear.Size = System.Drawing.Size(104, 23)
 		self._btnRulesetActionClear.TabIndex = 22
@@ -765,7 +765,7 @@ class MainForm(Form):
 		# 
 		self._btnRulesetActionUpdate.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnRulesetActionUpdate.ImageIndex = 15
-		self._btnRulesetActionUpdate.Location = System.Drawing.Point(238, 599)
+		self._btnRulesetActionUpdate.Location = System.Drawing.Point(238, 603)
 		self._btnRulesetActionUpdate.Name = "btnRulesetActionUpdate"
 		self._btnRulesetActionUpdate.Size = System.Drawing.Size(104, 23)
 		self._btnRulesetActionUpdate.TabIndex = 19
@@ -777,7 +777,7 @@ class MainForm(Form):
 		# 
 		self._btnRulesetActionRemove.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnRulesetActionRemove.ImageIndex = 18
-		self._btnRulesetActionRemove.Location = System.Drawing.Point(446, 599)
+		self._btnRulesetActionRemove.Location = System.Drawing.Point(446, 603)
 		self._btnRulesetActionRemove.Name = "btnRulesetActionRemove"
 		self._btnRulesetActionRemove.Size = System.Drawing.Size(104, 23)
 		self._btnRulesetActionRemove.TabIndex = 21
@@ -796,7 +796,7 @@ class MainForm(Form):
 		self._pnlGroups.Dock = System.Windows.Forms.DockStyle.Fill
 		self._pnlGroups.Location = System.Drawing.Point(0, 0)
 		self._pnlGroups.Name = "pnlGroups"
-		self._pnlGroups.Size = System.Drawing.Size(688, 629)
+		self._pnlGroups.Size = System.Drawing.Size(688, 633)
 		self._pnlGroups.TabIndex = 3
 		# 
 		# tabGroupTabs
@@ -807,7 +807,7 @@ class MainForm(Form):
 		self._tabGroupTabs.Location = System.Drawing.Point(3, 112)
 		self._tabGroupTabs.Name = "tabGroupTabs"
 		self._tabGroupTabs.SelectedIndex = 0
-		self._tabGroupTabs.Size = System.Drawing.Size(685, 514)
+		self._tabGroupTabs.Size = System.Drawing.Size(685, 518)
 		self._tabGroupTabs.TabIndex = 16
 		# 
 		# tabPage3
@@ -832,7 +832,7 @@ class MainForm(Form):
 		self._tabPage3.Location = System.Drawing.Point(4, 22)
 		self._tabPage3.Name = "tabPage3"
 		self._tabPage3.Padding = System.Windows.Forms.Padding(3)
-		self._tabPage3.Size = System.Drawing.Size(677, 488)
+		self._tabPage3.Size = System.Drawing.Size(677, 492)
 		self._tabPage3.TabIndex = 0
 		self._tabPage3.Text = "Groups & Rulesets"
 		self._tabPage3.UseVisualStyleBackColor = True
@@ -853,7 +853,7 @@ class MainForm(Form):
 		self._btnGroupRulesetRemove.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnGroupRulesetRemove.Enabled = False
 		self._btnGroupRulesetRemove.ImageIndex = 18
-		self._btnGroupRulesetRemove.Location = System.Drawing.Point(560, 455)
+		self._btnGroupRulesetRemove.Location = System.Drawing.Point(560, 459)
 		self._btnGroupRulesetRemove.Name = "btnGroupRulesetRemove"
 		self._btnGroupRulesetRemove.Size = System.Drawing.Size(83, 23)
 		self._btnGroupRulesetRemove.TabIndex = 15
@@ -879,7 +879,7 @@ class MainForm(Form):
 		self._btnGroupRulesetMoveDown.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnGroupRulesetMoveDown.Enabled = False
 		self._btnGroupRulesetMoveDown.ImageIndex = 13
-		self._btnGroupRulesetMoveDown.Location = System.Drawing.Point(649, 423)
+		self._btnGroupRulesetMoveDown.Location = System.Drawing.Point(649, 427)
 		self._btnGroupRulesetMoveDown.Name = "btnGroupRulesetMoveDown"
 		self._btnGroupRulesetMoveDown.Size = System.Drawing.Size(25, 25)
 		self._btnGroupRulesetMoveDown.TabIndex = 13
@@ -913,7 +913,7 @@ class MainForm(Form):
 		self._dgvGroupRulesets.RowHeadersWidth = 25
 		self._dgvGroupRulesets.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
 		self._dgvGroupRulesets.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-		self._dgvGroupRulesets.Size = System.Drawing.Size(642, 193)
+		self._dgvGroupRulesets.Size = System.Drawing.Size(642, 197)
 		self._dgvGroupRulesets.TabIndex = 11
 		# 
 		# btnGroupRulesetMoveUp
@@ -921,7 +921,7 @@ class MainForm(Form):
 		self._btnGroupRulesetMoveUp.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnGroupRulesetMoveUp.Enabled = False
 		self._btnGroupRulesetMoveUp.ImageIndex = 12
-		self._btnGroupRulesetMoveUp.Location = System.Drawing.Point(649, 397)
+		self._btnGroupRulesetMoveUp.Location = System.Drawing.Point(649, 401)
 		self._btnGroupRulesetMoveUp.Name = "btnGroupRulesetMoveUp"
 		self._btnGroupRulesetMoveUp.Size = System.Drawing.Size(25, 25)
 		self._btnGroupRulesetMoveUp.TabIndex = 12
@@ -960,7 +960,7 @@ class MainForm(Form):
 		# 
 		self._btnGroupRulesetAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnGroupRulesetAdd.ImageIndex = 17
-		self._btnGroupRulesetAdd.Location = System.Drawing.Point(475, 455)
+		self._btnGroupRulesetAdd.Location = System.Drawing.Point(475, 459)
 		self._btnGroupRulesetAdd.Name = "btnGroupRulesetAdd"
 		self._btnGroupRulesetAdd.Size = System.Drawing.Size(83, 23)
 		self._btnGroupRulesetAdd.TabIndex = 14
@@ -1078,7 +1078,7 @@ class MainForm(Form):
 		self._tabGrpRuleset.Location = System.Drawing.Point(4, 22)
 		self._tabGrpRuleset.Name = "tabGrpRuleset"
 		self._tabGrpRuleset.Padding = System.Windows.Forms.Padding(3)
-		self._tabGrpRuleset.Size = System.Drawing.Size(677, 463)
+		self._tabGrpRuleset.Size = System.Drawing.Size(677, 488)
 		self._tabGrpRuleset.TabIndex = 1
 		self._tabGrpRuleset.Text = "Filters & Defaults"
 		self._tabGrpRuleset.UseVisualStyleBackColor = True
@@ -1412,7 +1412,7 @@ class MainForm(Form):
 		self._pnlGeneral.Dock = System.Windows.Forms.DockStyle.Fill
 		self._pnlGeneral.Location = System.Drawing.Point(0, 0)
 		self._pnlGeneral.Name = "pnlGeneral"
-		self._pnlGeneral.Size = System.Drawing.Size(688, 629)
+		self._pnlGeneral.Size = System.Drawing.Size(688, 633)
 		self._pnlGeneral.TabIndex = 2
 		self._pnlGeneral.Visible = False
 		# 
@@ -1421,7 +1421,7 @@ class MainForm(Form):
 		self._btnCollectionRulesetMoveDown.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnCollectionRulesetMoveDown.Enabled = False
 		self._btnCollectionRulesetMoveDown.ImageIndex = 13
-		self._btnCollectionRulesetMoveDown.Location = System.Drawing.Point(650, 417)
+		self._btnCollectionRulesetMoveDown.Location = System.Drawing.Point(650, 421)
 		self._btnCollectionRulesetMoveDown.Name = "btnCollectionRulesetMoveDown"
 		self._btnCollectionRulesetMoveDown.Size = System.Drawing.Size(25, 25)
 		self._btnCollectionRulesetMoveDown.TabIndex = 10
@@ -1432,7 +1432,7 @@ class MainForm(Form):
 		self._btnCollectionRulesetMoveUp.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnCollectionRulesetMoveUp.Enabled = False
 		self._btnCollectionRulesetMoveUp.ImageIndex = 12
-		self._btnCollectionRulesetMoveUp.Location = System.Drawing.Point(650, 391)
+		self._btnCollectionRulesetMoveUp.Location = System.Drawing.Point(650, 395)
 		self._btnCollectionRulesetMoveUp.Name = "btnCollectionRulesetMoveUp"
 		self._btnCollectionRulesetMoveUp.Size = System.Drawing.Size(25, 25)
 		self._btnCollectionRulesetMoveUp.TabIndex = 9
@@ -1443,7 +1443,7 @@ class MainForm(Form):
 		self._btnCollectionGroupMoveDown.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnCollectionGroupMoveDown.Enabled = False
 		self._btnCollectionGroupMoveDown.ImageIndex = 13
-		self._btnCollectionGroupMoveDown.Location = System.Drawing.Point(650, 227)
+		self._btnCollectionGroupMoveDown.Location = System.Drawing.Point(650, 231)
 		self._btnCollectionGroupMoveDown.Name = "btnCollectionGroupMoveDown"
 		self._btnCollectionGroupMoveDown.Size = System.Drawing.Size(25, 25)
 		self._btnCollectionGroupMoveDown.TabIndex = 4
@@ -1454,7 +1454,7 @@ class MainForm(Form):
 		self._btnCollectionGroupMoveUp.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnCollectionGroupMoveUp.Enabled = False
 		self._btnCollectionGroupMoveUp.ImageIndex = 12
-		self._btnCollectionGroupMoveUp.Location = System.Drawing.Point(650, 201)
+		self._btnCollectionGroupMoveUp.Location = System.Drawing.Point(650, 205)
 		self._btnCollectionGroupMoveUp.Name = "btnCollectionGroupMoveUp"
 		self._btnCollectionGroupMoveUp.Size = System.Drawing.Size(25, 25)
 		self._btnCollectionGroupMoveUp.TabIndex = 3
@@ -1464,7 +1464,7 @@ class MainForm(Form):
 		# 
 		self._label20.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left
 		self._label20.AutoSize = True
-		self._label20.Location = System.Drawing.Point(20, 526)
+		self._label20.Location = System.Drawing.Point(20, 530)
 		self._label20.Name = "label20"
 		self._label20.Size = System.Drawing.Size(35, 13)
 		self._label20.TabIndex = 15
@@ -1474,7 +1474,7 @@ class MainForm(Form):
 		# 
 		self._label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left
 		self._label4.AutoSize = True
-		self._label4.Location = System.Drawing.Point(479, 498)
+		self._label4.Location = System.Drawing.Point(479, 502)
 		self._label4.Name = "label4"
 		self._label4.Size = System.Drawing.Size(100, 13)
 		self._label4.TabIndex = 10
@@ -1484,7 +1484,7 @@ class MainForm(Form):
 		# 
 		self._label18.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left
 		self._label18.AutoSize = True
-		self._label18.Location = System.Drawing.Point(20, 495)
+		self._label18.Location = System.Drawing.Point(20, 499)
 		self._label18.Name = "label18"
 		self._label18.Size = System.Drawing.Size(35, 13)
 		self._label18.TabIndex = 10
@@ -1493,7 +1493,7 @@ class MainForm(Form):
 		# txtCollectionNotes
 		# 
 		self._txtCollectionNotes.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right
-		self._txtCollectionNotes.Location = System.Drawing.Point(67, 526)
+		self._txtCollectionNotes.Location = System.Drawing.Point(67, 530)
 		self._txtCollectionNotes.Multiline = True
 		self._txtCollectionNotes.Name = "txtCollectionNotes"
 		self._txtCollectionNotes.Size = System.Drawing.Size(612, 96)
@@ -1502,7 +1502,7 @@ class MainForm(Form):
 		# textBox2
 		# 
 		self._textBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left
-		self._textBox2.Location = System.Drawing.Point(585, 495)
+		self._textBox2.Location = System.Drawing.Point(585, 499)
 		self._textBox2.Name = "textBox2"
 		self._textBox2.ReadOnly = True
 		self._textBox2.Size = System.Drawing.Size(93, 20)
@@ -1511,7 +1511,7 @@ class MainForm(Form):
 		# txtCollectionAuthor
 		# 
 		self._txtCollectionAuthor.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left
-		self._txtCollectionAuthor.Location = System.Drawing.Point(67, 491)
+		self._txtCollectionAuthor.Location = System.Drawing.Point(67, 495)
 		self._txtCollectionAuthor.Name = "txtCollectionAuthor"
 		self._txtCollectionAuthor.Size = System.Drawing.Size(162, 20)
 		self._txtCollectionAuthor.TabIndex = 14
@@ -1521,7 +1521,7 @@ class MainForm(Form):
 		self._label17.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left
 		self._label17.AutoSize = True
 		self._label17.Font = System.Drawing.Font("Microsoft Sans Serif", 9.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._label17.Location = System.Drawing.Point(7, 471)
+		self._label17.Location = System.Drawing.Point(7, 475)
 		self._label17.Name = "label17"
 		self._label17.Size = System.Drawing.Size(70, 16)
 		self._label17.TabIndex = 13
@@ -1532,7 +1532,7 @@ class MainForm(Form):
 		self._label14.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left
 		self._label14.AutoSize = True
 		self._label14.Font = System.Drawing.Font("Microsoft Sans Serif", 9.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._label14.Location = System.Drawing.Point(18, 291)
+		self._label14.Location = System.Drawing.Point(18, 295)
 		self._label14.Name = "label14"
 		self._label14.Size = System.Drawing.Size(199, 16)
 		self._label14.TabIndex = 7
@@ -1562,7 +1562,7 @@ class MainForm(Form):
 		# 
 		self._btnCollectionRulesetAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnCollectionRulesetAdd.ImageIndex = 17
-		self._btnCollectionRulesetAdd.Location = System.Drawing.Point(484, 448)
+		self._btnCollectionRulesetAdd.Location = System.Drawing.Point(484, 452)
 		self._btnCollectionRulesetAdd.Name = "btnCollectionRulesetAdd"
 		self._btnCollectionRulesetAdd.Size = System.Drawing.Size(79, 23)
 		self._btnCollectionRulesetAdd.TabIndex = 11
@@ -1574,7 +1574,7 @@ class MainForm(Form):
 		# 
 		self._btnCollectionGroupAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnCollectionGroupAdd.ImageIndex = 17
-		self._btnCollectionGroupAdd.Location = System.Drawing.Point(484, 258)
+		self._btnCollectionGroupAdd.Location = System.Drawing.Point(484, 262)
 		self._btnCollectionGroupAdd.Name = "btnCollectionGroupAdd"
 		self._btnCollectionGroupAdd.Size = System.Drawing.Size(79, 23)
 		self._btnCollectionGroupAdd.TabIndex = 5
@@ -1591,7 +1591,7 @@ class MainForm(Form):
 		self._dgvCollectionRulesets.BackgroundColor = System.Drawing.SystemColors.Window
 		self._dgvCollectionRulesets.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
 		self._dgvCollectionRulesets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-		self._dgvCollectionRulesets.Location = System.Drawing.Point(14, 313)
+		self._dgvCollectionRulesets.Location = System.Drawing.Point(14, 317)
 		self._dgvCollectionRulesets.MultiSelect = False
 		self._dgvCollectionRulesets.Name = "dgvCollectionRulesets"
 		self._dgvCollectionRulesets.RowHeadersWidth = 25
@@ -1606,7 +1606,7 @@ class MainForm(Form):
 		self._btnCollectionRulesetsRemove.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnCollectionRulesetsRemove.Enabled = False
 		self._btnCollectionRulesetsRemove.ImageIndex = 18
-		self._btnCollectionRulesetsRemove.Location = System.Drawing.Point(565, 448)
+		self._btnCollectionRulesetsRemove.Location = System.Drawing.Point(565, 452)
 		self._btnCollectionRulesetsRemove.Name = "btnCollectionRulesetsRemove"
 		self._btnCollectionRulesetsRemove.Size = System.Drawing.Size(79, 23)
 		self._btnCollectionRulesetsRemove.TabIndex = 12
@@ -1629,7 +1629,7 @@ class MainForm(Form):
 		self._dgvCollectionGroups.RowHeadersWidth = 25
 		self._dgvCollectionGroups.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
 		self._dgvCollectionGroups.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-		self._dgvCollectionGroups.Size = System.Drawing.Size(633, 169)
+		self._dgvCollectionGroups.Size = System.Drawing.Size(633, 173)
 		self._dgvCollectionGroups.TabIndex = 2
 		self._dgvCollectionGroups.TabStop = False
 		# 
@@ -1638,7 +1638,7 @@ class MainForm(Form):
 		self._btnCollectionGroupRemove.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right
 		self._btnCollectionGroupRemove.Enabled = False
 		self._btnCollectionGroupRemove.ImageIndex = 18
-		self._btnCollectionGroupRemove.Location = System.Drawing.Point(565, 258)
+		self._btnCollectionGroupRemove.Location = System.Drawing.Point(565, 262)
 		self._btnCollectionGroupRemove.Name = "btnCollectionGroupRemove"
 		self._btnCollectionGroupRemove.Size = System.Drawing.Size(79, 23)
 		self._btnCollectionGroupRemove.TabIndex = 6
@@ -1663,7 +1663,7 @@ class MainForm(Form):
 		self._tabTemplateManager.Location = System.Drawing.Point(4, 22)
 		self._tabTemplateManager.Name = "tabTemplateManager"
 		self._tabTemplateManager.Padding = System.Windows.Forms.Padding(3)
-		self._tabTemplateManager.Size = System.Drawing.Size(914, 610)
+		self._tabTemplateManager.Size = System.Drawing.Size(914, 635)
 		self._tabTemplateManager.TabIndex = 2
 		self._tabTemplateManager.Text = "Template Manager"
 		self._tabTemplateManager.UseVisualStyleBackColor = True
@@ -1820,7 +1820,7 @@ class MainForm(Form):
 		self._tabSearch.Location = System.Drawing.Point(4, 22)
 		self._tabSearch.Name = "tabSearch"
 		self._tabSearch.Padding = System.Windows.Forms.Padding(3)
-		self._tabSearch.Size = System.Drawing.Size(914, 610)
+		self._tabSearch.Size = System.Drawing.Size(914, 635)
 		self._tabSearch.TabIndex = 1
 		self._tabSearch.Text = "Search"
 		self._tabSearch.UseVisualStyleBackColor = True
@@ -1832,11 +1832,11 @@ class MainForm(Form):
 		# 
 		self._toolStripContainer2.ContentPanel.Controls.Add(self._dataGridView3)
 		self._toolStripContainer2.ContentPanel.Controls.Add(self._label6)
-		self._toolStripContainer2.ContentPanel.Size = System.Drawing.Size(908, 579)
+		self._toolStripContainer2.ContentPanel.Size = System.Drawing.Size(908, 604)
 		self._toolStripContainer2.Dock = System.Windows.Forms.DockStyle.Fill
 		self._toolStripContainer2.Location = System.Drawing.Point(3, 3)
 		self._toolStripContainer2.Name = "toolStripContainer2"
-		self._toolStripContainer2.Size = System.Drawing.Size(908, 604)
+		self._toolStripContainer2.Size = System.Drawing.Size(908, 629)
 		self._toolStripContainer2.TabIndex = 1
 		self._toolStripContainer2.Text = "toolStripContainer2"
 		# 
@@ -1857,7 +1857,7 @@ class MainForm(Form):
 		self._dataGridView3.Name = "dataGridView3"
 		self._dataGridView3.ReadOnly = True
 		self._dataGridView3.RowHeadersVisible = False
-		self._dataGridView3.Size = System.Drawing.Size(908, 548)
+		self._dataGridView3.Size = System.Drawing.Size(908, 573)
 		self._dataGridView3.TabIndex = 4
 		# 
 		# label6
@@ -1924,7 +1924,7 @@ class MainForm(Form):
 		# tscbSearchField
 		# 
 		self._tscbSearchField.Name = "tscbSearchField"
-		self._tscbSearchField.Size = System.Drawing.Size(95, 25)
+		self._tscbSearchField.Size = System.Drawing.Size(95, 23)
 		self._tscbSearchField.Visible = False
 		# 
 		# tsLabelSearchModifier
@@ -1938,7 +1938,7 @@ class MainForm(Form):
 		# 
 		self._tscbSearchModifier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
 		self._tscbSearchModifier.Name = "tscbSearchModifier"
-		self._tscbSearchModifier.Size = System.Drawing.Size(95, 25)
+		self._tscbSearchModifier.Size = System.Drawing.Size(95, 23)
 		self._tscbSearchModifier.Visible = False
 		# 
 		# tslblSearchValue
@@ -1966,9 +1966,18 @@ class MainForm(Form):
 		self._toolStripSeparator5.Name = "toolStripSeparator5"
 		self._toolStripSeparator5.Size = System.Drawing.Size(6, 25)
 		# 
+		# statusStrip1
+		# 
+		self._statusStrip1.Location = System.Drawing.Point(0, 668)
+		self._statusStrip1.Name = "statusStrip1"
+		self._statusStrip1.Size = System.Drawing.Size(922, 22)
+		self._statusStrip1.TabIndex = 2
+		self._statusStrip1.Text = "statusStrip1"
+		# 
 		# MainForm
 		# 
-		self.ClientSize = System.Drawing.Size(922, 661)
+		self.ClientSize = System.Drawing.Size(922, 690)
+		self.Controls.Add(self._statusStrip1)
 		self.Controls.Add(self._tabControl1)
 		self.Name = "MainForm"
 		self.Text = "DataManagerGUI"
@@ -2022,4 +2031,5 @@ class MainForm(Form):
 		self._tsSearch.ResumeLayout(False)
 		self._tsSearch.PerformLayout()
 		self.ResumeLayout(False)
+		self.PerformLayout()
 
